@@ -55,9 +55,9 @@ const Login = () => {
           required
         />
         <LoginConfirmButton disabled={loading} type="submit">
-          Login
+          Log in
         </LoginConfirmButton>
-        <EntryBottomLink to="/reset">Forgot password</EntryBottomLink>
+        <EntryBottomLink to="/reset">Forgot password?</EntryBottomLink>
       </EntryInputContainer>
     </EntryForm>
   );
@@ -73,7 +73,7 @@ const Login = () => {
   return (
     <Container>
       <EntryComponent
-        title="Login"
+        title="Log in"
         form={LoginForm}
         bottomMessage={SignupMessage}
       />

@@ -75,12 +75,12 @@ const Signup = () => {
   const LoginMessage = (
     <>
       Already have an account?{" "}
-      <EntryBottomLink to="/login">Login</EntryBottomLink>
+      <EntryBottomLink to="/login">Log in</EntryBottomLink>
     </>
   );
   return (
     <EntryComponent
-      title="Signup"
+      title="Sign up"
       form={SignupForm}
       bottomMessage={LoginMessage}
     />
