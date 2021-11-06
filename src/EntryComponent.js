@@ -12,6 +12,9 @@ const EntryBackground = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #fafafa;
+  @media (max-width: 400px) {
+    background: #ffff;
+  }
 `;
 
 export const EntryPanel = styled.div`
@@ -23,6 +26,13 @@ export const EntryPanel = styled.div`
   background: rgba(255, 255, 255, 1);
   box-shadow: 0 0 0.1rem 0.1px gray;
   border-radius: 0.5rem;
+  @media (max-width: 400px) {
+    min-width: 1rem;
+    width: 100%
+    background: #ffff;
+    box-shadow: 0 0 0 0;
+    border-radius: 0;
+  }
 `;
 export const EntryLogo = styled.div`
   margin-bottom: 1rem;
@@ -35,6 +45,10 @@ export const EntryHeader = styled.div`
 export const EntryContainer = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 400px) {
+    height: 100%;
+    width: 100%;
+  }
 `;
 export const EntryContentContainer = styled.div``;
 
@@ -100,8 +114,6 @@ export const EntryBottomLink = styled(Link)`
 `;
 
 export const EntryErrorMessage = styled.div`
-  position: absolute;
-  top: 2rem;
   font-size: 0.8em;
   padding: 0 0.5rem;
   margin: 0.5rem 0;
@@ -109,8 +121,6 @@ export const EntryErrorMessage = styled.div`
 `;
 
 export const SuccessMessage = styled.div`
-  position: absolute;
-  top: 0.5rem;
   font-size: 0.8em;
   padding: 0 0.5rem;
   margin: 0.5rem 0;

@@ -66,7 +66,7 @@ const Login = () => {
   const SignupMessage = (
     <>
       Don't have an account?{" "}
-      <EntryBottomLink to="/signup">Signup</EntryBottomLink>
+      <EntryBottomLink to="/signup">Sign up</EntryBottomLink>
     </>
   );
 
